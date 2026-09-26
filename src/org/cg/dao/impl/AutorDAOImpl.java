@@ -16,12 +16,23 @@ import org.cg.util.Conexion;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class AutorDAOImpl del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class AutorDAOImpl implements AutorDAO {
 
     @Override
     /**
      * Método listarTodos.
      * @return un valor de tipo ArrayList<Autor>
+     */
+    /**
+     * Ejecuta la operacion listarTodos.
+     * @return valor de tipo ArrayList<Autor>
      */
     public ArrayList<Autor> listarTodos() {
         ArrayList<Autor> lista = new ArrayList<>();
@@ -49,6 +60,11 @@ public class AutorDAOImpl implements AutorDAO {
      * Método buscarPorId.
      * @param idAutor parámetro de tipo Integer
      * @return un valor de tipo Autor
+     */
+    /**
+     * Ejecuta la operacion buscarPorId.
+     * @param idAutor valor de tipo Integer
+     * @return valor de tipo Autor
      */
     public Autor buscarPorId(Integer idAutor) {
         Autor a = null;
@@ -78,6 +94,11 @@ public class AutorDAOImpl implements AutorDAO {
      * @param autor parámetro de tipo Autor
      * @return un valor de tipo boolean
      */
+    /**
+     * Ejecuta la operacion crear.
+     * @param autor valor de tipo Autor
+     * @return valor de tipo boolean
+     */
     public boolean crear(Autor autor) {
         String sql = "{call sp_insertarautor(?,?,?,?)}";
         try (Connection conexion = Conexion.getInstancia().conectar();
@@ -97,6 +118,11 @@ public class AutorDAOImpl implements AutorDAO {
      * Método actualizar.
      * @param autor parámetro de tipo Autor
      * @return un valor de tipo boolean
+     */
+    /**
+     * Ejecuta la operacion actualizar.
+     * @param autor valor de tipo Autor
+     * @return valor de tipo boolean
      */
     public boolean actualizar(Autor autor) {
         String sql = "{call sp_actualizarautor(?,?,?,?,?)}";
@@ -118,6 +144,11 @@ public class AutorDAOImpl implements AutorDAO {
      * Método eliminar.
      * @param idAutor parámetro de tipo Integer
      * @return un valor de tipo boolean
+     */
+    /**
+     * Ejecuta la operacion eliminar.
+     * @param idAutor valor de tipo Integer
+     * @return valor de tipo boolean
      */
     public boolean eliminar(Integer idAutor) {
         String sql = "{call sp_eliminarautor(?)}";

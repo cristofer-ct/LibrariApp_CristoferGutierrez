@@ -21,6 +21,13 @@ import org.cg.util.Conexion;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class VentaDAOImpl del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class VentaDAOImpl implements VentaDAO {
 
     private final DetalleVentaDAO detalleVentaDAO = new DetalleVentaDAOImpl();
@@ -29,6 +36,10 @@ public class VentaDAOImpl implements VentaDAO {
     /**
      * Método listarTodos.
      * @return un valor de tipo ArrayList<Venta>
+     */
+    /**
+     * Ejecuta la operacion listarTodos.
+     * @return valor de tipo ArrayList<Venta>
      */
     public ArrayList<Venta> listarTodos() {
         ArrayList<Venta> lista = new ArrayList<>();
@@ -56,6 +67,11 @@ public class VentaDAOImpl implements VentaDAO {
      * Método buscarPorId.
      * @param noVenta parámetro de tipo Integer
      * @return un valor de tipo Venta
+     */
+    /**
+     * Ejecuta la operacion buscarPorId.
+     * @param noVenta valor de tipo Integer
+     * @return valor de tipo Venta
      */
     public Venta buscarPorId(Integer noVenta) {
         Venta v = null;
@@ -85,6 +101,11 @@ public class VentaDAOImpl implements VentaDAO {
      * @param venta parámetro de tipo Venta
      * @return un valor de tipo boolean
      */
+    /**
+     * Ejecuta la operacion crear.
+     * @param venta valor de tipo Venta
+     * @return valor de tipo boolean
+     */
     public boolean crear(Venta venta) {
         String sql = "{call sp_insertar_venta(?,?,?)}";
         try (Connection conexion = Conexion.getInstancia().conectar();
@@ -103,6 +124,11 @@ public class VentaDAOImpl implements VentaDAO {
      * Método actualizar.
      * @param venta parámetro de tipo Venta
      * @return un valor de tipo boolean
+     */
+    /**
+     * Ejecuta la operacion actualizar.
+     * @param venta valor de tipo Venta
+     * @return valor de tipo boolean
      */
     public boolean actualizar(Venta venta) {
         String sql = "{call sp_actualizar_venta(?,?,?,?,?)}";
@@ -132,6 +158,12 @@ public class VentaDAOImpl implements VentaDAO {
      * @param venta parámetro de tipo Venta
      * @param lineas parámetro de tipo List<LineaVenta>
      * @return un valor de tipo int
+     */
+    /**
+     * Ejecuta la operacion crearVenta.
+     * @param venta valor de tipo Venta
+     * @param lineas valor de tipo List<LineaVenta>
+     * @return valor de tipo int
      */
     public int crearVenta(Venta venta, List<LineaVenta> lineas) {
         int noVenta = -1;
@@ -182,6 +214,11 @@ public class VentaDAOImpl implements VentaDAO {
      * Método eliminar.
      * @param noVenta parámetro de tipo Integer
      * @return un valor de tipo boolean
+     */
+    /**
+     * Ejecuta la operacion eliminar.
+     * @param noVenta valor de tipo Integer
+     * @return valor de tipo boolean
      */
     public boolean eliminar(Integer noVenta) {
         String sql = "{call sp_eliminar_venta(?)}";

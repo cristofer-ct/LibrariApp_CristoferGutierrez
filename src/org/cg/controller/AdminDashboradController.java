@@ -23,6 +23,13 @@ import org.cg.manager.SesionContext;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class AdminDashboradController del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class AdminDashboradController implements Initializable {
 
     @FXML private Label lblBienvenida;
@@ -54,6 +61,11 @@ public class AdminDashboradController implements Initializable {
      * @param url parámetro de tipo URL
      * @param rb parámetro de tipo ResourceBundle
      */
+    /**
+     * Ejecuta la operacion initialize.
+     * @param url valor de tipo URL
+     * @param rb valor de tipo ResourceBundle
+     */
     public void initialize(URL url, ResourceBundle rb) {
         usuarioActual = SesionContext.getInstancia().getUsuarioActual();
         if (usuarioActual != null) {
@@ -78,6 +90,10 @@ public class AdminDashboradController implements Initializable {
      * Método cerrarSesion.
      * @param evento parámetro de tipo ActionEvent
      */
+    /**
+     * Ejecuta la operacion cerrarSesion.
+     * @param evento valor de tipo ActionEvent
+     */
     public void cerrarSesion(ActionEvent evento) {
         SesionContext.getInstancia().cerrarSesion();
         navegar("/org/ac/view/fxml/InicioSesionView.fxml");
@@ -88,6 +104,10 @@ public class AdminDashboradController implements Initializable {
      * Método irAUsuario.
      * @param evento parámetro de tipo ActionEvent
      */
+    /**
+     * Ejecuta la operacion irAUsuario.
+     * @param evento valor de tipo ActionEvent
+     */
     public void irAUsuario(ActionEvent evento) {
         navegar("/org/ac/view/fxml/UsuarioView.fxml");
     }
@@ -96,6 +116,10 @@ public class AdminDashboradController implements Initializable {
     /**
      * Método irALibro.
      * @param evento parámetro de tipo ActionEvent
+     */
+    /**
+     * Ejecuta la operacion irALibro.
+     * @param evento valor de tipo ActionEvent
      */
     public void irALibro(ActionEvent evento) {
         navegar("/org/ac/view/fxml/LibroView.fxml");
@@ -106,6 +130,10 @@ public class AdminDashboradController implements Initializable {
      * Método irAAutor.
      * @param evento parámetro de tipo ActionEvent
      */
+    /**
+     * Ejecuta la operacion irAAutor.
+     * @param evento valor de tipo ActionEvent
+     */
     public void irAAutor(ActionEvent evento) {
         navegar("/org/ac/view/fxml/AutorView.fxml");
     }
@@ -114,6 +142,10 @@ public class AdminDashboradController implements Initializable {
     /**
      * Método irACategoria.
      * @param evento parámetro de tipo ActionEvent
+     */
+    /**
+     * Ejecuta la operacion irACategoria.
+     * @param evento valor de tipo ActionEvent
      */
     public void irACategoria(ActionEvent evento) {
         navegar("/org/ac/view/fxml/CategoriaView.fxml");
@@ -124,6 +156,10 @@ public class AdminDashboradController implements Initializable {
      * Método irAEditorial.
      * @param evento parámetro de tipo ActionEvent
      */
+    /**
+     * Ejecuta la operacion irAEditorial.
+     * @param evento valor de tipo ActionEvent
+     */
     public void irAEditorial(ActionEvent evento) {
         navegar("/org/ac/view/fxml/EditorialView.fxml");
     }
@@ -132,6 +168,10 @@ public class AdminDashboradController implements Initializable {
     /**
      * Método irAVentas.
      * @param evento parámetro de tipo ActionEvent
+     */
+    /**
+     * Ejecuta la operacion irAVentas.
+     * @param evento valor de tipo ActionEvent
      */
     public void irAVentas(ActionEvent evento) {
         navegar("/org/ac/view/fxml/ListaVentasView.fxml");
@@ -142,6 +182,10 @@ public class AdminDashboradController implements Initializable {
      * Método irAAutorLibro.
      * @param evento parámetro de tipo ActionEvent
      */
+    /**
+     * Ejecuta la operacion irAAutorLibro.
+     * @param evento valor de tipo ActionEvent
+     */
     public void irAAutorLibro(ActionEvent evento) {
         navegar("/org/ac/view/fxml/AutorLibroView.fxml");
     }
@@ -151,6 +195,10 @@ public class AdminDashboradController implements Initializable {
      * Método irADetalleVenta.
      * @param evento parámetro de tipo ActionEvent
      */
+    /**
+     * Ejecuta la operacion irADetalleVenta.
+     * @param evento valor de tipo ActionEvent
+     */
     public void irADetalleVenta(ActionEvent evento) {
         navegar("/org/ac/view/fxml/DetalleVentaView.fxml");
     }
@@ -159,6 +207,10 @@ public class AdminDashboradController implements Initializable {
     /**
      * Método irAClientes.
      * @param evento parámetro de tipo ActionEvent
+     */
+    /**
+     * Ejecuta la operacion irAClientes.
+     * @param evento valor de tipo ActionEvent
      */
     public void irAClientes(ActionEvent evento) {
         try {
@@ -174,6 +226,10 @@ public class AdminDashboradController implements Initializable {
      * Método nuevoLibro.
      * @param evento parámetro de tipo MouseEvent
      */
+    /**
+     * Ejecuta la operacion nuevoLibro.
+     * @param evento valor de tipo MouseEvent
+     */
     public void nuevoLibro(MouseEvent evento) {
         navegar("/org/ac/view/fxml/LibroFormView.fxml");
     }
@@ -182,6 +238,10 @@ public class AdminDashboradController implements Initializable {
     /**
      * Método agregarVenta.
      * @param evento parámetro de tipo MouseEvent
+     */
+    /**
+     * Ejecuta la operacion agregarVenta.
+     * @param evento valor de tipo MouseEvent
      */
     public void agregarVenta(MouseEvent evento) {
         navegar("/org/ac/view/fxml/VentaView.fxml");
@@ -192,6 +252,10 @@ public class AdminDashboradController implements Initializable {
      * Método verInventario.
      * @param evento parámetro de tipo MouseEvent
      */
+    /**
+     * Ejecuta la operacion verInventario.
+     * @param evento valor de tipo MouseEvent
+     */
     public void verInventario(MouseEvent evento) {
         navegar("/org/ac/view/fxml/InventarioView.fxml");
     }
@@ -200,6 +264,10 @@ public class AdminDashboradController implements Initializable {
     /**
      * Método gestionarUsuarios.
      * @param evento parámetro de tipo MouseEvent
+     */
+    /**
+     * Ejecuta la operacion gestionarUsuarios.
+     * @param evento valor de tipo MouseEvent
      */
     public void gestionarUsuarios(MouseEvent evento) {
         navegar("/org/ac/view/fxml/GestionUsuariosView.fxml");
@@ -210,6 +278,10 @@ public class AdminDashboradController implements Initializable {
      * Método reportes.
      * @param evento parámetro de tipo MouseEvent
      */
+    /**
+     * Ejecuta la operacion reportes.
+     * @param evento valor de tipo MouseEvent
+     */
     public void reportes(MouseEvent evento) {
         navegar("/org/ac/view/fxml/ReportesView.fxml");
     }
@@ -218,6 +290,10 @@ public class AdminDashboradController implements Initializable {
     /**
      * Método configuracion.
      * @param evento parámetro de tipo MouseEvent
+     */
+    /**
+     * Ejecuta la operacion configuracion.
+     * @param evento valor de tipo MouseEvent
      */
     public void configuracion(MouseEvent evento) {
         navegar("/org/ac/view/fxml/ConfiguracionView.fxml");
@@ -238,6 +314,10 @@ public class AdminDashboradController implements Initializable {
     /**
      * Método iniciarUsuario.
      * @param usuario parámetro de tipo Usuario
+     */
+    /**
+     * Ejecuta la operacion iniciarUsuario.
+     * @param usuario valor de tipo Usuario
      */
     public void iniciarUsuario(Usuario usuario) {
         this.usuarioActual = usuario;

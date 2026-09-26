@@ -10,6 +10,13 @@ import org.cg.model.Venta;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Interface VentaDAO del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public interface VentaDAO extends Crud<Venta, Integer>{
     //crearVenta inserta el encabezado de la venta, sus líneas y descuenta el stock.
     //Devuelve el no_venta generado (o -1 si falla).

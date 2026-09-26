@@ -28,6 +28,13 @@ import javafx.scene.control.TextField;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class InicioSesionController del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class InicioSesionController implements Initializable {
 
     @FXML
@@ -47,6 +54,11 @@ public class InicioSesionController implements Initializable {
      * @param url parámetro de tipo URL
      * @param rb parámetro de tipo ResourceBundle
      */
+    /**
+     * Ejecuta la operacion initialize.
+     * @param url valor de tipo URL
+     * @param rb valor de tipo ResourceBundle
+     */
     public void initialize(URL url, ResourceBundle rb) {
         usuarioDAO = new UsuarioDAOImpl();
         lblMensaje.setText("");
@@ -60,6 +72,10 @@ public class InicioSesionController implements Initializable {
     /**
      * Método eventoInicioSesion.
      * @param evento parámetro de tipo ActionEvent
+     */
+    /**
+     * Ejecuta la operacion eventoInicioSesion.
+     * @param evento valor de tipo ActionEvent
      */
     public void eventoInicioSesion(ActionEvent evento) {
         try {
@@ -89,6 +105,10 @@ public class InicioSesionController implements Initializable {
     /**
      * Método eventoRegistrarse.
      * @param evento parámetro de tipo ActionEvent
+     */
+    /**
+     * Ejecuta la operacion eventoRegistrarse.
+     * @param evento valor de tipo ActionEvent
      */
     public void eventoRegistrarse(ActionEvent evento) {
         try {

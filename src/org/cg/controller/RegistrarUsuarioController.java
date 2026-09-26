@@ -26,6 +26,13 @@ import org.cg.util.SecurityUtil;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class RegistrarUsuarioController del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class RegistrarUsuarioController implements Initializable {
 
     @FXML
@@ -55,6 +62,11 @@ public class RegistrarUsuarioController implements Initializable {
      * @param url parámetro de tipo URL
      * @param rb parámetro de tipo ResourceBundle
      */
+    /**
+     * Ejecuta la operacion initialize.
+     * @param url valor de tipo URL
+     * @param rb valor de tipo ResourceBundle
+     */
     public void initialize(URL url, ResourceBundle rb) {
         usuarioDAO = new UsuarioDAOImpl();
         lblMensaje.setText("");
@@ -64,6 +76,10 @@ public class RegistrarUsuarioController implements Initializable {
     /**
      * Método eventoRegistrar.
      * @param evento parámetro de tipo ActionEvent
+     */
+    /**
+     * Ejecuta la operacion eventoRegistrar.
+     * @param evento valor de tipo ActionEvent
      */
     public void eventoRegistrar(ActionEvent evento) {
         try {
@@ -105,6 +121,10 @@ public class RegistrarUsuarioController implements Initializable {
     /**
      * Método eventoVolver.
      * @param evento parámetro de tipo ActionEvent
+     */
+    /**
+     * Ejecuta la operacion eventoVolver.
+     * @param evento valor de tipo ActionEvent
      */
     public void eventoVolver(ActionEvent evento) {
         try {

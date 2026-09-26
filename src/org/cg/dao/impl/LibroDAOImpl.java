@@ -16,12 +16,23 @@ import org.cg.util.Conexion;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class LibroDAOImpl del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class LibroDAOImpl implements LibroDAO {
 
     @Override
     /**
      * Método listarTodos.
      * @return un valor de tipo ArrayList<Libro>
+     */
+    /**
+     * Ejecuta la operacion listarTodos.
+     * @return valor de tipo ArrayList<Libro>
      */
     public ArrayList<Libro> listarTodos() {
         ArrayList<Libro> lista = new ArrayList<>();
@@ -51,6 +62,11 @@ public class LibroDAOImpl implements LibroDAO {
      * Método buscarPorId.
      * @param isbn parámetro de tipo String
      * @return un valor de tipo Libro
+     */
+    /**
+     * Ejecuta la operacion buscarPorId.
+     * @param isbn valor de tipo String
+     * @return valor de tipo Libro
      */
     public Libro buscarPorId(String isbn) {
         Libro l = null;
@@ -82,6 +98,11 @@ public class LibroDAOImpl implements LibroDAO {
      * @param libro parámetro de tipo Libro
      * @return un valor de tipo boolean
      */
+    /**
+     * Ejecuta la operacion crear.
+     * @param libro valor de tipo Libro
+     * @return valor de tipo boolean
+     */
     public boolean crear(Libro libro) {
         String sql = "{call sp_crear_libro(?,?,?,?,?,?,?)}";
         try (Connection conexion = Conexion.getInstancia().conectar();
@@ -105,6 +126,11 @@ public class LibroDAOImpl implements LibroDAO {
      * @param libro parámetro de tipo Libro
      * @return un valor de tipo boolean
      */
+    /**
+     * Ejecuta la operacion actualizar.
+     * @param libro valor de tipo Libro
+     * @return valor de tipo boolean
+     */
     public boolean actualizar(Libro libro) {
         String sql = "{call sp_actualizar_libro(?,?,?,?,?,?,?)}";
         try (Connection conexion = Conexion.getInstancia().conectar();
@@ -127,6 +153,11 @@ public class LibroDAOImpl implements LibroDAO {
      * Método eliminar.
      * @param isbn parámetro de tipo String
      * @return un valor de tipo boolean
+     */
+    /**
+     * Ejecuta la operacion eliminar.
+     * @param isbn valor de tipo String
+     * @return valor de tipo boolean
      */
     public boolean eliminar(String isbn) {
         String sql = "{call sp_eliminar_libro(?)}";

@@ -16,12 +16,23 @@ import org.cg.util.Conexion;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class EditorialDAOImpl del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class EditorialDAOImpl implements EditorialDAO {
 
     @Override
     /**
      * Método listarTodos.
      * @return un valor de tipo ArrayList<Editorial>
+     */
+    /**
+     * Ejecuta la operacion listarTodos.
+     * @return valor de tipo ArrayList<Editorial>
      */
     public ArrayList<Editorial> listarTodos() {
         ArrayList<Editorial> lista = new ArrayList<>();
@@ -48,6 +59,11 @@ public class EditorialDAOImpl implements EditorialDAO {
      * Método buscarPorId.
      * @param nit parámetro de tipo String
      * @return un valor de tipo Editorial
+     */
+    /**
+     * Ejecuta la operacion buscarPorId.
+     * @param nit valor de tipo String
+     * @return valor de tipo Editorial
      */
     public Editorial buscarPorId(String nit) {
         Editorial e = null;
@@ -76,6 +92,11 @@ public class EditorialDAOImpl implements EditorialDAO {
      * @param editorial parámetro de tipo Editorial
      * @return un valor de tipo boolean
      */
+    /**
+     * Ejecuta la operacion crear.
+     * @param editorial valor de tipo Editorial
+     * @return valor de tipo boolean
+     */
     public boolean crear(Editorial editorial) {
         String sql = "{call sp_crear_editorial(?,?,?,?)}";
         try (Connection conexion = Conexion.getInstancia().conectar();
@@ -96,6 +117,11 @@ public class EditorialDAOImpl implements EditorialDAO {
      * @param editorial parámetro de tipo Editorial
      * @return un valor de tipo boolean
      */
+    /**
+     * Ejecuta la operacion actualizar.
+     * @param editorial valor de tipo Editorial
+     * @return valor de tipo boolean
+     */
     public boolean actualizar(Editorial editorial) {
         String sql = "{call sp_actualizar_editorial(?,?,?,?)}";
         try (Connection conexion = Conexion.getInstancia().conectar();
@@ -115,6 +141,11 @@ public class EditorialDAOImpl implements EditorialDAO {
      * Método eliminar.
      * @param nit parámetro de tipo String
      * @return un valor de tipo boolean
+     */
+    /**
+     * Ejecuta la operacion eliminar.
+     * @param nit valor de tipo String
+     * @return valor de tipo boolean
      */
     public boolean eliminar(String nit) {
         String sql = "{call sp_eliminar_editorial(?)}";

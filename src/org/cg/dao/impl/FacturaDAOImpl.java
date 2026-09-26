@@ -16,6 +16,13 @@ import org.cg.util.Conexion;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class FacturaDAOImpl del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class FacturaDAOImpl implements FacturaDAO {
 
     @Override
@@ -23,6 +30,11 @@ public class FacturaDAOImpl implements FacturaDAO {
      * Método buscarFactura.
      * @param noVenta parámetro de tipo int
      * @return un valor de tipo ArrayList<LineaFactura>
+     */
+    /**
+     * Ejecuta la operacion buscarFactura.
+     * @param noVenta valor de tipo int
+     * @return valor de tipo ArrayList<LineaFactura>
      */
     public ArrayList<LineaFactura> buscarFactura(int noVenta) {
         ArrayList<LineaFactura> lista = new ArrayList<>();

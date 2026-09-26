@@ -8,6 +8,13 @@ import java.util.logging.Logger;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class ValidacionException del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class ValidacionException extends Exception {
 
         private static final Logger log = Logger.getLogger(ValidacionException.class.getName());
@@ -15,6 +22,10 @@ public class ValidacionException extends Exception {
     /**
      * Constructor para la clase ValidacionException.
      * @param mensaje parámetro de tipo String
+     */
+    /**
+     * Constructor de ValidacionException.
+     * @param mensaje valor de tipo String
      */
     public ValidacionException(String mensaje) {
         super(mensaje);

@@ -10,6 +10,13 @@ import java.sql.Timestamp;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class Usuario del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class Usuario {
     //id, username, email, first_name, last_name, password_hash, rol, activo, fecha_creacion
     private int id;
@@ -43,6 +50,12 @@ public class Usuario {
      * @param username parámetro de tipo String
      * @param rol parámetro de tipo String
      */
+    /**
+     * Constructor de Usuario.
+     * @param id valor de tipo int
+     * @param username valor de tipo String
+     * @param rol valor de tipo String
+     */
     public Usuario(int id, String username, String rol) {
         this.id = id;
         this.username = username;
@@ -67,6 +80,10 @@ public class Usuario {
      * Obtiene el valor de rol.
      * @return un valor de tipo String
      */
+    /**
+     * Obtiene el valor de rol.
+     * @return valor de tipo String
+     */
     public String getRol() {
         return rol;
     }
@@ -78,6 +95,10 @@ public class Usuario {
     /**
      * Establece el valor de rol.
      * @param rol parámetro de tipo String
+     */
+    /**
+     * Establece el valor de rol.
+     * @param rol valor de tipo String
      */
     public void setRol(String rol) {
         this.rol = rol;
@@ -91,6 +112,10 @@ public class Usuario {
      * Obtiene el valor de id.
      * @return un valor de tipo int
      */
+    /**
+     * Obtiene el valor de id.
+     * @return valor de tipo int
+     */
     public int getId() {
         return id;
     }
@@ -102,6 +127,10 @@ public class Usuario {
     /**
      * Establece el valor de id.
      * @param id parámetro de tipo int
+     */
+    /**
+     * Establece el valor de id.
+     * @param id valor de tipo int
      */
     public void setId(int id) {
         this.id = id;
@@ -115,6 +144,10 @@ public class Usuario {
      * Obtiene el valor de username.
      * @return un valor de tipo String
      */
+    /**
+     * Obtiene el valor de username.
+     * @return valor de tipo String
+     */
     public String getUsername() {
         return username;
     }
@@ -126,6 +159,10 @@ public class Usuario {
     /**
      * Establece el valor de username.
      * @param username parámetro de tipo String
+     */
+    /**
+     * Establece el valor de username.
+     * @param username valor de tipo String
      */
     public void setUsername(String username) {
         this.username = username;
@@ -139,6 +176,10 @@ public class Usuario {
      * Obtiene el valor de email.
      * @return un valor de tipo String
      */
+    /**
+     * Obtiene el valor de email.
+     * @return valor de tipo String
+     */
     public String getEmail() {
         return email;
     }
@@ -150,6 +191,10 @@ public class Usuario {
     /**
      * Establece el valor de email.
      * @param email parámetro de tipo String
+     */
+    /**
+     * Establece el valor de email.
+     * @param email valor de tipo String
      */
     public void setEmail(String email) {
         this.email = email;
@@ -163,6 +208,10 @@ public class Usuario {
      * Obtiene el valor de firstname.
      * @return un valor de tipo String
      */
+    /**
+     * Obtiene el valor de firstname.
+     * @return valor de tipo String
+     */
     public String getFirstName() {
         return firstName;
     }
@@ -174,6 +223,10 @@ public class Usuario {
     /**
      * Establece el valor de firstname.
      * @param firstName parámetro de tipo String
+     */
+    /**
+     * Establece el valor de firstname.
+     * @param firstName valor de tipo String
      */
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -187,6 +240,10 @@ public class Usuario {
      * Obtiene el valor de lastname.
      * @return un valor de tipo String
      */
+    /**
+     * Obtiene el valor de lastname.
+     * @return valor de tipo String
+     */
     public String getLastName() {
         return lastName;
     }
@@ -198,6 +255,10 @@ public class Usuario {
     /**
      * Establece el valor de lastname.
      * @param lastName parámetro de tipo String
+     */
+    /**
+     * Establece el valor de lastname.
+     * @param lastName valor de tipo String
      */
     public void setLastName(String lastName) {
         this.lastName = lastName;
@@ -211,6 +272,10 @@ public class Usuario {
      * Obtiene el valor de passwordhash.
      * @return un valor de tipo String
      */
+    /**
+     * Obtiene el valor de passwordhash.
+     * @return valor de tipo String
+     */
     public String getPasswordHash() {
         return passwordHash;
     }
@@ -222,6 +287,10 @@ public class Usuario {
     /**
      * Establece el valor de passwordhash.
      * @param passwordHash parámetro de tipo String
+     */
+    /**
+     * Establece el valor de passwordhash.
+     * @param passwordHash valor de tipo String
      */
     public void setPasswordHash(String passwordHash) {
         this.passwordHash = passwordHash;
@@ -235,6 +304,10 @@ public class Usuario {
      * Método isActivo.
      * @return un valor de tipo boolean
      */
+    /**
+     * Ejecuta la operacion isActivo.
+     * @return valor de tipo boolean
+     */
     public boolean isActivo() {
         return activo;
     }
@@ -246,6 +319,10 @@ public class Usuario {
     /**
      * Establece el valor de activo.
      * @param activo parámetro de tipo boolean
+     */
+    /**
+     * Establece el valor de activo.
+     * @param activo valor de tipo boolean
      */
     public void setActivo(boolean activo) {
         this.activo = activo;
@@ -259,6 +336,10 @@ public class Usuario {
      * Obtiene el valor de fechacreacion.
      * @return un valor de tipo Timestamp
      */
+    /**
+     * Obtiene el valor de fechacreacion.
+     * @return valor de tipo Timestamp
+     */
     public Timestamp getFechaCreacion() {
         return fechaCreacion;
     }
@@ -270,6 +351,10 @@ public class Usuario {
     /**
      * Establece el valor de fechacreacion.
      * @param fechaCreacion parámetro de tipo Timestamp
+     */
+    /**
+     * Establece el valor de fechacreacion.
+     * @param fechaCreacion valor de tipo Timestamp
      */
     public void setFechaCreacion(Timestamp fechaCreacion) {
         this.fechaCreacion = fechaCreacion;
@@ -283,6 +368,10 @@ public class Usuario {
     /**
      * Método toString.
      * @return un valor de tipo String
+     */
+    /**
+     * Retorna la representacion en cadena del objeto.
+     * @return valor de tipo String
      */
     public String toString() {
         return username;

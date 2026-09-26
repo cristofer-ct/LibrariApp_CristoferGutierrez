@@ -23,6 +23,13 @@ import org.cg.manager.SesionContext;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class EmpleadoController del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class EmpleadoController implements Initializable {
 
     @FXML private Label lblBienvenida;
@@ -52,6 +59,11 @@ public class EmpleadoController implements Initializable {
      * @param url parámetro de tipo URL
      * @param rb parámetro de tipo ResourceBundle
      */
+    /**
+     * Ejecuta la operacion initialize.
+     * @param url valor de tipo URL
+     * @param rb valor de tipo ResourceBundle
+     */
     public void initialize(URL url, ResourceBundle rb) {
         usuarioActual = SesionContext.getInstancia().getUsuarioActual();
         if (usuarioActual != null) {
@@ -76,6 +88,10 @@ public class EmpleadoController implements Initializable {
      * Método cerrarSesion.
      * @param evento parámetro de tipo ActionEvent
      */
+    /**
+     * Ejecuta la operacion cerrarSesion.
+     * @param evento valor de tipo ActionEvent
+     */
     public void cerrarSesion(ActionEvent evento) {
         SesionContext.getInstancia().cerrarSesion();
         navegar("/org/ac/view/fxml/InicioSesionView.fxml");
@@ -86,6 +102,10 @@ public class EmpleadoController implements Initializable {
      * Método irAInventario.
      * @param evento parámetro de tipo ActionEvent
      */
+    /**
+     * Ejecuta la operacion irAInventario.
+     * @param evento valor de tipo ActionEvent
+     */
     public void irAInventario(ActionEvent evento) {
         navegar("/org/ac/view/fxml/InventarioView.fxml");
     }
@@ -94,6 +114,10 @@ public class EmpleadoController implements Initializable {
     /**
      * Método irALibro.
      * @param evento parámetro de tipo ActionEvent
+     */
+    /**
+     * Ejecuta la operacion irALibro.
+     * @param evento valor de tipo ActionEvent
      */
     public void irALibro(ActionEvent evento) {
         navegar("/org/ac/view/fxml/LibroView.fxml");
@@ -104,6 +128,10 @@ public class EmpleadoController implements Initializable {
      * Método irAAutor.
      * @param evento parámetro de tipo ActionEvent
      */
+    /**
+     * Ejecuta la operacion irAAutor.
+     * @param evento valor de tipo ActionEvent
+     */
     public void irAAutor(ActionEvent evento) {
         navegar("/org/ac/view/fxml/AutorView.fxml");
     }
@@ -112,6 +140,10 @@ public class EmpleadoController implements Initializable {
     /**
      * Método irACategoria.
      * @param evento parámetro de tipo ActionEvent
+     */
+    /**
+     * Ejecuta la operacion irACategoria.
+     * @param evento valor de tipo ActionEvent
      */
     public void irACategoria(ActionEvent evento) {
         navegar("/org/ac/view/fxml/CategoriaView.fxml");
@@ -122,6 +154,10 @@ public class EmpleadoController implements Initializable {
      * Método irAEditorial.
      * @param evento parámetro de tipo ActionEvent
      */
+    /**
+     * Ejecuta la operacion irAEditorial.
+     * @param evento valor de tipo ActionEvent
+     */
     public void irAEditorial(ActionEvent evento) {
         navegar("/org/ac/view/fxml/EditorialView.fxml");
     }
@@ -130,6 +166,10 @@ public class EmpleadoController implements Initializable {
     /**
      * Método irAClientes.
      * @param evento parámetro de tipo ActionEvent
+     */
+    /**
+     * Ejecuta la operacion irAClientes.
+     * @param evento valor de tipo ActionEvent
      */
     public void irAClientes(ActionEvent evento) {
         navegar("/org/ac/view/fxml/ClienteView.fxml");
@@ -140,6 +180,10 @@ public class EmpleadoController implements Initializable {
      * Método verInventario.
      * @param evento parámetro de tipo MouseEvent
      */
+    /**
+     * Ejecuta la operacion verInventario.
+     * @param evento valor de tipo MouseEvent
+     */
     public void verInventario(MouseEvent evento) {
         navegar("/org/ac/view/fxml/InventarioView.fxml");
     }
@@ -148,6 +192,10 @@ public class EmpleadoController implements Initializable {
     /**
      * Método nuevoLibro.
      * @param evento parámetro de tipo MouseEvent
+     */
+    /**
+     * Ejecuta la operacion nuevoLibro.
+     * @param evento valor de tipo MouseEvent
      */
     public void nuevoLibro(MouseEvent evento) {
         navegar("/org/ac/view/fxml/LibroView.fxml");
@@ -158,6 +206,10 @@ public class EmpleadoController implements Initializable {
      * Método nuevoAutor.
      * @param evento parámetro de tipo MouseEvent
      */
+    /**
+     * Ejecuta la operacion nuevoAutor.
+     * @param evento valor de tipo MouseEvent
+     */
     public void nuevoAutor(MouseEvent evento) {
         navegar("/org/ac/view/fxml/AutorView.fxml");
     }
@@ -166,6 +218,10 @@ public class EmpleadoController implements Initializable {
     /**
      * Método nuevaCategoria.
      * @param evento parámetro de tipo MouseEvent
+     */
+    /**
+     * Ejecuta la operacion nuevaCategoria.
+     * @param evento valor de tipo MouseEvent
      */
     public void nuevaCategoria(MouseEvent evento) {
         navegar("/org/ac/view/fxml/CategoriaView.fxml");
@@ -176,6 +232,10 @@ public class EmpleadoController implements Initializable {
      * Método nuevaEditorial.
      * @param evento parámetro de tipo MouseEvent
      */
+    /**
+     * Ejecuta la operacion nuevaEditorial.
+     * @param evento valor de tipo MouseEvent
+     */
     public void nuevaEditorial(MouseEvent evento) {
         navegar("/org/ac/view/fxml/EditorialView.fxml");
     }
@@ -184,6 +244,10 @@ public class EmpleadoController implements Initializable {
     /**
      * Método nuevoCliente.
      * @param evento parámetro de tipo MouseEvent
+     */
+    /**
+     * Ejecuta la operacion nuevoCliente.
+     * @param evento valor de tipo MouseEvent
      */
     public void nuevoCliente(MouseEvent evento) {
         navegar("/org/ac/view/fxml/ClienteView.fxml");

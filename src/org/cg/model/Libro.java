@@ -6,6 +6,13 @@ package org.cg.model;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class Libro del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class Libro {
     private String isbn;
     private String titulo;
@@ -44,6 +51,16 @@ public class Libro {
      * @param nitEditorial parámetro de tipo String
      * @param stock parámetro de tipo int
      */
+    /**
+     * Constructor de Libro.
+     * @param isbn valor de tipo String
+     * @param titulo valor de tipo String
+     * @param fechaPublicacion valor de tipo String
+     * @param precio valor de tipo double
+     * @param idCategoria valor de tipo int
+     * @param nitEditorial valor de tipo String
+     * @param stock valor de tipo int
+     */
     public Libro(String isbn, String titulo, String fechaPublicacion, double precio, int idCategoria, String nitEditorial, int stock) {
         this.isbn = isbn;
         this.titulo = titulo;
@@ -62,6 +79,10 @@ public class Libro {
      * Obtiene el valor de isbn.
      * @return un valor de tipo String
      */
+    /**
+     * Obtiene el valor de isbn.
+     * @return valor de tipo String
+     */
     public String getIsbn() {
         return isbn;
     }
@@ -73,6 +94,10 @@ public class Libro {
     /**
      * Establece el valor de isbn.
      * @param isbn parámetro de tipo String
+     */
+    /**
+     * Establece el valor de isbn.
+     * @param isbn valor de tipo String
      */
     public void setIsbn(String isbn) {
         this.isbn = isbn;
@@ -86,6 +111,10 @@ public class Libro {
      * Obtiene el valor de titulo.
      * @return un valor de tipo String
      */
+    /**
+     * Obtiene el valor de titulo.
+     * @return valor de tipo String
+     */
     public String getTitulo() {
         return titulo;
     }
@@ -97,6 +126,10 @@ public class Libro {
     /**
      * Establece el valor de titulo.
      * @param titulo parámetro de tipo String
+     */
+    /**
+     * Establece el valor de titulo.
+     * @param titulo valor de tipo String
      */
     public void setTitulo(String titulo) {
         this.titulo = titulo;
@@ -110,6 +143,10 @@ public class Libro {
      * Obtiene el valor de fechapublicacion.
      * @return un valor de tipo String
      */
+    /**
+     * Obtiene el valor de fechapublicacion.
+     * @return valor de tipo String
+     */
     public String getFechaPublicacion() {
         return fechaPublicacion;
     }
@@ -121,6 +158,10 @@ public class Libro {
     /**
      * Establece el valor de fechapublicacion.
      * @param fechaPublicacion parámetro de tipo String
+     */
+    /**
+     * Establece el valor de fechapublicacion.
+     * @param fechaPublicacion valor de tipo String
      */
     public void setFechaPublicacion(String fechaPublicacion) {
         this.fechaPublicacion = fechaPublicacion;
@@ -134,6 +175,10 @@ public class Libro {
      * Obtiene el valor de precio.
      * @return un valor de tipo double
      */
+    /**
+     * Obtiene el valor de precio.
+     * @return valor de tipo double
+     */
     public double getPrecio() {
         return precio;
     }
@@ -145,6 +190,10 @@ public class Libro {
     /**
      * Establece el valor de precio.
      * @param precio parámetro de tipo double
+     */
+    /**
+     * Establece el valor de precio.
+     * @param precio valor de tipo double
      */
     public void setPrecio(double precio) {
         this.precio = precio;
@@ -158,6 +207,10 @@ public class Libro {
      * Obtiene el valor de idcategoria.
      * @return un valor de tipo int
      */
+    /**
+     * Obtiene el valor de idcategoria.
+     * @return valor de tipo int
+     */
     public int getIdCategoria() {
         return idCategoria;
     }
@@ -169,6 +222,10 @@ public class Libro {
     /**
      * Establece el valor de idcategoria.
      * @param idCategoria parámetro de tipo int
+     */
+    /**
+     * Establece el valor de idcategoria.
+     * @param idCategoria valor de tipo int
      */
     public void setIdCategoria(int idCategoria) {
         this.idCategoria = idCategoria;
@@ -182,6 +239,10 @@ public class Libro {
      * Obtiene el valor de niteditorial.
      * @return un valor de tipo String
      */
+    /**
+     * Obtiene el valor de niteditorial.
+     * @return valor de tipo String
+     */
     public String getNitEditorial() {
         return nitEditorial;
     }
@@ -193,6 +254,10 @@ public class Libro {
     /**
      * Establece el valor de niteditorial.
      * @param nitEditorial parámetro de tipo String
+     */
+    /**
+     * Establece el valor de niteditorial.
+     * @param nitEditorial valor de tipo String
      */
     public void setNitEditorial(String nitEditorial) {
         this.nitEditorial = nitEditorial;
@@ -206,6 +271,10 @@ public class Libro {
      * Obtiene el valor de stock.
      * @return un valor de tipo int
      */
+    /**
+     * Obtiene el valor de stock.
+     * @return valor de tipo int
+     */
     public int getStock() {
         return stock;
     }
@@ -217,6 +286,10 @@ public class Libro {
     /**
      * Establece el valor de stock.
      * @param stock parámetro de tipo int
+     */
+    /**
+     * Establece el valor de stock.
+     * @param stock valor de tipo int
      */
     public void setStock(int stock) {
         this.stock = stock;
@@ -230,6 +303,10 @@ public class Libro {
     /**
      * Método toString.
      * @return un valor de tipo String
+     */
+    /**
+     * Retorna la representacion en cadena del objeto.
+     * @return valor de tipo String
      */
     public String toString() {
         return titulo;

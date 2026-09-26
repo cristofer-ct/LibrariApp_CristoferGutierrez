@@ -18,6 +18,13 @@ import org.cg.model.Usuario;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class Principal del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class Principal extends Application {
 
     private static Stage escenarioPrincipal;
@@ -32,6 +39,11 @@ public class Principal extends Application {
      * Método cambiarEscena.
      * @param rutaFXML parámetro de tipo String
      * @throws IOException en caso de error
+     */
+    /**
+     * Ejecuta la operacion cambiarEscena.
+     * @param rutaFXML valor de tipo String
+     * @throws IOException si ocurre un error
      */
     public static void cambiarEscena(String rutaFXML) throws IOException {
         log.log(Level.INFO, "Se cambio de escena a: {0}", rutaFXML);
@@ -56,6 +68,10 @@ public class Principal extends Application {
     /**
      * Método rutaDashboardSegunRol.
      * @return un valor de tipo String
+     */
+    /**
+     * Ejecuta la operacion rutaDashboardSegunRol.
+     * @return valor de tipo String
      */
     public static String rutaDashboardSegunRol() {
         Usuario usuario = SesionContext.getInstancia().getUsuarioActual();
@@ -82,6 +98,10 @@ public class Principal extends Application {
      * Método main.
      * @param args parámetro de tipo String[]
      */
+    /**
+     * Ejecuta la operacion main.
+     * @param args valor de tipo String[]
+     */
     public static void main(String[] args) {
         log.info("Se inicio el programa");
         launch(args);
@@ -98,6 +118,11 @@ public class Principal extends Application {
      * Método start.
      * @param escenarioPrincipal parámetro de tipo Stage
      * @throws Exception en caso de error
+     */
+    /**
+     * Ejecuta la operacion start.
+     * @param escenarioPrincipal valor de tipo Stage
+     * @throws Exception si ocurre un error
      */
     public void start(Stage escenarioPrincipal) throws Exception {
         Principal.escenarioPrincipal = escenarioPrincipal;

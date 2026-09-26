@@ -6,6 +6,13 @@ package org.cg.model;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class Venta del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class Venta {
     private int noVenta;
     private String fechaVenta;
@@ -38,6 +45,14 @@ public class Venta {
      * @param cuiCliente parámetro de tipo long
      * @param idUsuario parámetro de tipo int
      */
+    /**
+     * Constructor de Venta.
+     * @param noVenta valor de tipo int
+     * @param fechaVenta valor de tipo String
+     * @param totalVenta valor de tipo double
+     * @param cuiCliente valor de tipo long
+     * @param idUsuario valor de tipo int
+     */
     public Venta(int noVenta, String fechaVenta, double totalVenta, long cuiCliente, int idUsuario) {
         this.noVenta = noVenta;
         this.fechaVenta = fechaVenta;
@@ -54,6 +69,10 @@ public class Venta {
      * Obtiene el valor de noventa.
      * @return un valor de tipo int
      */
+    /**
+     * Obtiene el valor de noventa.
+     * @return valor de tipo int
+     */
     public int getNoVenta() {
         return noVenta;
     }
@@ -65,6 +84,10 @@ public class Venta {
     /**
      * Establece el valor de noventa.
      * @param noVenta parámetro de tipo int
+     */
+    /**
+     * Establece el valor de noventa.
+     * @param noVenta valor de tipo int
      */
     public void setNoVenta(int noVenta) {
         this.noVenta = noVenta;
@@ -78,6 +101,10 @@ public class Venta {
      * Obtiene el valor de fechaventa.
      * @return un valor de tipo String
      */
+    /**
+     * Obtiene el valor de fechaventa.
+     * @return valor de tipo String
+     */
     public String getFechaVenta() {
         return fechaVenta;
     }
@@ -89,6 +116,10 @@ public class Venta {
     /**
      * Establece el valor de fechaventa.
      * @param fechaVenta parámetro de tipo String
+     */
+    /**
+     * Establece el valor de fechaventa.
+     * @param fechaVenta valor de tipo String
      */
     public void setFechaVenta(String fechaVenta) {
         this.fechaVenta = fechaVenta;
@@ -102,6 +133,10 @@ public class Venta {
      * Obtiene el valor de totalventa.
      * @return un valor de tipo double
      */
+    /**
+     * Obtiene el valor de totalventa.
+     * @return valor de tipo double
+     */
     public double getTotalVenta() {
         return totalVenta;
     }
@@ -113,6 +148,10 @@ public class Venta {
     /**
      * Establece el valor de totalventa.
      * @param totalVenta parámetro de tipo double
+     */
+    /**
+     * Establece el valor de totalventa.
+     * @param totalVenta valor de tipo double
      */
     public void setTotalVenta(double totalVenta) {
         this.totalVenta = totalVenta;
@@ -126,6 +165,10 @@ public class Venta {
      * Obtiene el valor de cuicliente.
      * @return un valor de tipo long
      */
+    /**
+     * Obtiene el valor de cuicliente.
+     * @return valor de tipo long
+     */
     public long getCuiCliente() {
         return cuiCliente;
     }
@@ -137,6 +180,10 @@ public class Venta {
     /**
      * Establece el valor de cuicliente.
      * @param cuiCliente parámetro de tipo long
+     */
+    /**
+     * Establece el valor de cuicliente.
+     * @param cuiCliente valor de tipo long
      */
     public void setCuiCliente(long cuiCliente) {
         this.cuiCliente = cuiCliente;
@@ -150,6 +197,10 @@ public class Venta {
      * Obtiene el valor de idusuario.
      * @return un valor de tipo int
      */
+    /**
+     * Obtiene el valor de idusuario.
+     * @return valor de tipo int
+     */
     public int getIdUsuario() {
         return idUsuario;
     }
@@ -161,6 +212,10 @@ public class Venta {
     /**
      * Establece el valor de idusuario.
      * @param idUsuario parámetro de tipo int
+     */
+    /**
+     * Establece el valor de idusuario.
+     * @param idUsuario valor de tipo int
      */
     public void setIdUsuario(int idUsuario) {
         this.idUsuario = idUsuario;

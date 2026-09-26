@@ -30,6 +30,13 @@ import org.cg.system.Principal;
  * @see javafx.fxml.Initializable
  * @see org.cg.model.Categoria
  */
+/**
+ * Class CategoriaController del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class CategoriaController implements Initializable {
 
     @FXML
@@ -76,6 +83,11 @@ public class CategoriaController implements Initializable {
      * Método initialize.
      * @param location parámetro de tipo URL
      * @param resources parámetro de tipo ResourceBundle
+     */
+    /**
+     * Ejecuta la operacion initialize.
+     * @param location valor de tipo URL
+     * @param resources valor de tipo ResourceBundle
      */
     public void initialize(URL location, ResourceBundle resources) {
         cargarTabla();

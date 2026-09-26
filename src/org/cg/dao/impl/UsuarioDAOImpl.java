@@ -18,6 +18,13 @@ import org.cg.util.Conexion;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class UsuarioDAOImpl del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class UsuarioDAOImpl implements UsuarioDAO {
 
     //inicioSesion
@@ -27,6 +34,12 @@ public class UsuarioDAOImpl implements UsuarioDAO {
      * @param usernarme parámetro de tipo String
      * @param passwordHash parámetro de tipo String
      * @return un valor de tipo Usuario
+     */
+    /**
+     * Ejecuta la operacion iniciarSesion.
+     * @param usernarme valor de tipo String
+     * @param passwordHash valor de tipo String
+     * @return valor de tipo Usuario
      */
     public Usuario iniciarSesion(String usernarme, String passwordHash) {
         Usuario usuario = null;
@@ -64,6 +77,11 @@ public class UsuarioDAOImpl implements UsuarioDAO {
      * @param usuario parámetro de tipo Usuario
      * @return un valor de tipo boolean
      */
+    /**
+     * Ejecuta la operacion crearUsuario.
+     * @param usuario valor de tipo Usuario
+     * @return valor de tipo boolean
+     */
     public boolean crearUsuario(Usuario usuario) {
         String sql = "{call sp_crear_usuario(?,?,?,?,?,?)}";
         try (Connection conexion = Conexion.getInstancia().conectar();
@@ -87,6 +105,11 @@ public class UsuarioDAOImpl implements UsuarioDAO {
      * Método actualizarUsuario.
      * @param usuario parámetro de tipo Usuario
      * @return un valor de tipo boolean
+     */
+    /**
+     * Ejecuta la operacion actualizarUsuario.
+     * @param usuario valor de tipo Usuario
+     * @return valor de tipo boolean
      */
     public boolean actualizarUsuario(Usuario usuario) {
         String sql = "{call sp_actualizar_usuario(?,?,?,?,?,?,?)}";
@@ -114,6 +137,12 @@ public class UsuarioDAOImpl implements UsuarioDAO {
      * @param passwordHash parámetro de tipo String
      * @return un valor de tipo boolean
      */
+    /**
+     * Ejecuta la operacion cambiarPassword.
+     * @param idUsuario valor de tipo int
+     * @param passwordHash valor de tipo String
+     * @return valor de tipo boolean
+     */
     public boolean cambiarPassword(int idUsuario, String passwordHash) {
         String sql = "{call sp_cambiar_password(?,?)}";
         try (Connection conexion = Conexion.getInstancia().conectar();
@@ -134,6 +163,11 @@ public class UsuarioDAOImpl implements UsuarioDAO {
      * @param idUsuario parámetro de tipo int
      * @return un valor de tipo boolean
      */
+    /**
+     * Ejecuta la operacion desactivarUsuario.
+     * @param idUsuario valor de tipo int
+     * @return valor de tipo boolean
+     */
     public boolean desactivarUsuario(int idUsuario) {
         String sql = "{call sp_desactivar_usuario(?)}";
         try (Connection conexion = Conexion.getInstancia().conectar();
@@ -153,6 +187,11 @@ public class UsuarioDAOImpl implements UsuarioDAO {
      * @param idUsuario parámetro de tipo int
      * @return un valor de tipo boolean
      */
+    /**
+     * Ejecuta la operacion eliminarUsuario.
+     * @param idUsuario valor de tipo int
+     * @return valor de tipo boolean
+     */
     public boolean eliminarUsuario(int idUsuario) {
         String sql = "{call sp_eliminar_usuario(?)}";
         try (Connection conexion = Conexion.getInstancia().conectar();
@@ -170,6 +209,10 @@ public class UsuarioDAOImpl implements UsuarioDAO {
     /**
      * Método listarTodosUsuarios.
      * @return un valor de tipo ArrayList<Usuario>
+     */
+    /**
+     * Ejecuta la operacion listarTodosUsuarios.
+     * @return valor de tipo ArrayList<Usuario>
      */
     public ArrayList<Usuario> listarTodosUsuarios() {
         ArrayList<Usuario> lista = new ArrayList<>();
@@ -201,6 +244,11 @@ public class UsuarioDAOImpl implements UsuarioDAO {
      * Método obtenerUsuarioPorId.
      * @param idUsuario parámetro de tipo int
      * @return un valor de tipo Usuario
+     */
+    /**
+     * Ejecuta la operacion obtenerUsuarioPorId.
+     * @param idUsuario valor de tipo int
+     * @return valor de tipo Usuario
      */
     public Usuario obtenerUsuarioPorId(int idUsuario) {
         Usuario usuario = null;

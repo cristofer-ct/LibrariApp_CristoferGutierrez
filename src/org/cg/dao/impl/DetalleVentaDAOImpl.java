@@ -16,12 +16,23 @@ import org.cg.util.Conexion;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class DetalleVentaDAOImpl del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class DetalleVentaDAOImpl implements DetalleVentaDAO {
 
     @Override
     /**
      * Método listarTodos.
      * @return un valor de tipo ArrayList<DetalleVenta>
+     */
+    /**
+     * Ejecuta la operacion listarTodos.
+     * @return valor de tipo ArrayList<DetalleVenta>
      */
     public ArrayList<DetalleVenta> listarTodos() {
         ArrayList<DetalleVenta> lista = new ArrayList<>();
@@ -49,6 +60,11 @@ public class DetalleVentaDAOImpl implements DetalleVentaDAO {
      * Método buscarPorId.
      * @param idDetalleVenta parámetro de tipo Integer
      * @return un valor de tipo DetalleVenta
+     */
+    /**
+     * Ejecuta la operacion buscarPorId.
+     * @param idDetalleVenta valor de tipo Integer
+     * @return valor de tipo DetalleVenta
      */
     public DetalleVenta buscarPorId(Integer idDetalleVenta) {
         DetalleVenta dv = null;
@@ -78,6 +94,11 @@ public class DetalleVentaDAOImpl implements DetalleVentaDAO {
      * @param detalleVenta parámetro de tipo DetalleVenta
      * @return un valor de tipo boolean
      */
+    /**
+     * Ejecuta la operacion crear.
+     * @param detalleVenta valor de tipo DetalleVenta
+     * @return valor de tipo boolean
+     */
     public boolean crear(DetalleVenta detalleVenta) {
         String sql = "{call sp_insertar_detalle_venta(?,?,?,?)}";
         try (Connection conexion = Conexion.getInstancia().conectar();
@@ -97,6 +118,11 @@ public class DetalleVentaDAOImpl implements DetalleVentaDAO {
      * Método actualizar.
      * @param detalleVenta parámetro de tipo DetalleVenta
      * @return un valor de tipo boolean
+     */
+    /**
+     * Ejecuta la operacion actualizar.
+     * @param detalleVenta valor de tipo DetalleVenta
+     * @return valor de tipo boolean
      */
     public boolean actualizar(DetalleVenta detalleVenta) {
         String sql = "{call sp_actualizar_detalle_venta(?,?,?,?,?)}";
@@ -118,6 +144,11 @@ public class DetalleVentaDAOImpl implements DetalleVentaDAO {
      * Método eliminar.
      * @param idDetalleVenta parámetro de tipo Integer
      * @return un valor de tipo boolean
+     */
+    /**
+     * Ejecuta la operacion eliminar.
+     * @param idDetalleVenta valor de tipo Integer
+     * @return valor de tipo boolean
      */
     public boolean eliminar(Integer idDetalleVenta) {
         String sql = "{call sp_eliminar_detalle_venta(?)}";

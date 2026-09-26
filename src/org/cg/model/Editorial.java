@@ -6,6 +6,13 @@ package org.cg.model;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class Editorial del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class Editorial {
     private String nit;
     private String nombreEditorial;
@@ -35,6 +42,13 @@ public class Editorial {
      * @param telefonoEditorial parámetro de tipo String
      * @param direccionEditoria parámetro de tipo String
      */
+    /**
+     * Constructor de Editorial.
+     * @param nit valor de tipo String
+     * @param nombreEditorial valor de tipo String
+     * @param telefonoEditorial valor de tipo String
+     * @param direccionEditoria valor de tipo String
+     */
     public Editorial(String nit, String nombreEditorial, String telefonoEditorial, String direccionEditoria) {
         this.nit = nit;
         this.nombreEditorial = nombreEditorial;
@@ -50,6 +64,10 @@ public class Editorial {
      * Obtiene el valor de nit.
      * @return un valor de tipo String
      */
+    /**
+     * Obtiene el valor de nit.
+     * @return valor de tipo String
+     */
     public String getNit() {
         return nit;
     }
@@ -61,6 +79,10 @@ public class Editorial {
     /**
      * Establece el valor de nit.
      * @param nit parámetro de tipo String
+     */
+    /**
+     * Establece el valor de nit.
+     * @param nit valor de tipo String
      */
     public void setNit(String nit) {
         this.nit = nit;
@@ -74,6 +96,10 @@ public class Editorial {
      * Obtiene el valor de nombreeditorial.
      * @return un valor de tipo String
      */
+    /**
+     * Obtiene el valor de nombreeditorial.
+     * @return valor de tipo String
+     */
     public String getNombreEditorial() {
         return nombreEditorial;
     }
@@ -85,6 +111,10 @@ public class Editorial {
     /**
      * Establece el valor de nombreeditorial.
      * @param nombreEditorial parámetro de tipo String
+     */
+    /**
+     * Establece el valor de nombreeditorial.
+     * @param nombreEditorial valor de tipo String
      */
     public void setNombreEditorial(String nombreEditorial) {
         this.nombreEditorial = nombreEditorial;
@@ -98,6 +128,10 @@ public class Editorial {
      * Obtiene el valor de telefonoeditorial.
      * @return un valor de tipo String
      */
+    /**
+     * Obtiene el valor de telefonoeditorial.
+     * @return valor de tipo String
+     */
     public String getTelefonoEditorial() {
         return telefonoEditorial;
     }
@@ -109,6 +143,10 @@ public class Editorial {
     /**
      * Establece el valor de telefonoeditorial.
      * @param telefonoEditorial parámetro de tipo String
+     */
+    /**
+     * Establece el valor de telefonoeditorial.
+     * @param telefonoEditorial valor de tipo String
      */
     public void setTelefonoEditorial(String telefonoEditorial) {
         this.telefonoEditorial = telefonoEditorial;
@@ -122,6 +160,10 @@ public class Editorial {
      * Obtiene el valor de direccioneditoria.
      * @return un valor de tipo String
      */
+    /**
+     * Obtiene el valor de direccioneditoria.
+     * @return valor de tipo String
+     */
     public String getDireccionEditoria() {
         return direccionEditoria;
     }
@@ -133,6 +175,10 @@ public class Editorial {
     /**
      * Establece el valor de direccioneditoria.
      * @param direccionEditoria parámetro de tipo String
+     */
+    /**
+     * Establece el valor de direccioneditoria.
+     * @param direccionEditoria valor de tipo String
      */
     public void setDireccionEditoria(String direccionEditoria) {
         this.direccionEditoria = direccionEditoria;
@@ -146,6 +192,10 @@ public class Editorial {
     /**
      * Método toString.
      * @return un valor de tipo String
+     */
+    /**
+     * Retorna la representacion en cadena del objeto.
+     * @return valor de tipo String
      */
     public String toString() {
         return nombreEditorial;

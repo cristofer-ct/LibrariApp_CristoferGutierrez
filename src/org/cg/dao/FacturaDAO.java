@@ -9,6 +9,13 @@ import org.cg.model.LineaFactura;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Interface FacturaDAO del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public interface FacturaDAO {
     ArrayList<LineaFactura> buscarFactura(int noVenta);
 }

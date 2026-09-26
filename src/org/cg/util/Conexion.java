@@ -13,6 +13,13 @@ import java.util.Properties;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class Conexion del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class Conexion {
     private static Conexion instancia;
 
@@ -69,6 +76,11 @@ public class Conexion {
      * Método conectar.
      * @return un valor de tipo Connection
      * @throws SQLException en caso de error
+     */
+    /**
+     * Ejecuta la operacion conectar.
+     * @return valor de tipo Connection
+     * @throws SQLException si ocurre un error
      */
     public Connection conectar() throws SQLException {
         return DriverManager.getConnection(url, user, password);

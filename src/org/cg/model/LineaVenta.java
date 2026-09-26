@@ -8,6 +8,13 @@ package org.cg.model;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class LineaVenta del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class LineaVenta {
     private Libro libro;
     private int cantidad;
@@ -31,6 +38,11 @@ public class LineaVenta {
      * @param libro parámetro de tipo Libro
      * @param cantidad parámetro de tipo int
      */
+    /**
+     * Constructor de LineaVenta.
+     * @param libro valor de tipo Libro
+     * @param cantidad valor de tipo int
+     */
     public LineaVenta(Libro libro, int cantidad) {
         this.libro = libro;
         this.cantidad = cantidad;
@@ -44,6 +56,10 @@ public class LineaVenta {
      * Obtiene el valor de libro.
      * @return un valor de tipo Libro
      */
+    /**
+     * Obtiene el valor de libro.
+     * @return valor de tipo Libro
+     */
     public Libro getLibro() {
         return libro;
     }
@@ -55,6 +71,10 @@ public class LineaVenta {
     /**
      * Establece el valor de libro.
      * @param libro parámetro de tipo Libro
+     */
+    /**
+     * Establece el valor de libro.
+     * @param libro valor de tipo Libro
      */
     public void setLibro(Libro libro) {
         this.libro = libro;
@@ -68,6 +88,10 @@ public class LineaVenta {
      * Obtiene el valor de cantidad.
      * @return un valor de tipo int
      */
+    /**
+     * Obtiene el valor de cantidad.
+     * @return valor de tipo int
+     */
     public int getCantidad() {
         return cantidad;
     }
@@ -79,6 +103,10 @@ public class LineaVenta {
     /**
      * Establece el valor de cantidad.
      * @param cantidad parámetro de tipo int
+     */
+    /**
+     * Establece el valor de cantidad.
+     * @param cantidad valor de tipo int
      */
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
@@ -92,6 +120,10 @@ public class LineaVenta {
      * Obtiene el valor de isbn.
      * @return un valor de tipo String
      */
+    /**
+     * Obtiene el valor de isbn.
+     * @return valor de tipo String
+     */
     public String getIsbn() {
         return libro.getIsbn();
     }
@@ -103,6 +135,10 @@ public class LineaVenta {
     /**
      * Obtiene el valor de titulo.
      * @return un valor de tipo String
+     */
+    /**
+     * Obtiene el valor de titulo.
+     * @return valor de tipo String
      */
     public String getTitulo() {
         return libro.getTitulo();
@@ -116,6 +152,10 @@ public class LineaVenta {
      * Obtiene el valor de precio.
      * @return un valor de tipo double
      */
+    /**
+     * Obtiene el valor de precio.
+     * @return valor de tipo double
+     */
     public double getPrecio() {
         return libro.getPrecio();
     }
@@ -127,6 +167,10 @@ public class LineaVenta {
     /**
      * Obtiene el valor de subtotal.
      * @return un valor de tipo double
+     */
+    /**
+     * Obtiene el valor de subtotal.
+     * @return valor de tipo double
      */
     public double getSubtotal() {
         return libro.getPrecio() * cantidad;

@@ -11,6 +11,13 @@ import org.cg.model.Usuario;
  *
  * @author aruba
  */
+/**
+ * Interface UsuarioDAO del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public interface UsuarioDAO {
     public Usuario iniciarSesion(String usernarme, String passwordHash);
     public boolean crearUsuario(Usuario usuario);

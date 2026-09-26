@@ -23,6 +23,13 @@ import org.cg.manager.SesionContext;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class CajeroController del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class CajeroController implements Initializable {
 
     @FXML private Label lblBienvenida;
@@ -48,6 +55,11 @@ public class CajeroController implements Initializable {
      * @param url parámetro de tipo URL
      * @param rb parámetro de tipo ResourceBundle
      */
+    /**
+     * Ejecuta la operacion initialize.
+     * @param url valor de tipo URL
+     * @param rb valor de tipo ResourceBundle
+     */
     public void initialize(URL url, ResourceBundle rb) {
         usuarioActual = SesionContext.getInstancia().getUsuarioActual();
         if (usuarioActual != null) {
@@ -72,6 +84,10 @@ public class CajeroController implements Initializable {
      * Método cerrarSesion.
      * @param evento parámetro de tipo ActionEvent
      */
+    /**
+     * Ejecuta la operacion cerrarSesion.
+     * @param evento valor de tipo ActionEvent
+     */
     public void cerrarSesion(ActionEvent evento) {
         SesionContext.getInstancia().cerrarSesion();
         navegar("/org/ac/view/fxml/InicioSesionView.fxml");
@@ -82,6 +98,10 @@ public class CajeroController implements Initializable {
      * Método irAVenta.
      * @param evento parámetro de tipo ActionEvent
      */
+    /**
+     * Ejecuta la operacion irAVenta.
+     * @param evento valor de tipo ActionEvent
+     */
     public void irAVenta(ActionEvent evento) {
         navegar("/org/ac/view/fxml/VentaView.fxml");
     }
@@ -90,6 +110,10 @@ public class CajeroController implements Initializable {
     /**
      * Método irADetalleVenta.
      * @param evento parámetro de tipo ActionEvent
+     */
+    /**
+     * Ejecuta la operacion irADetalleVenta.
+     * @param evento valor de tipo ActionEvent
      */
     public void irADetalleVenta(ActionEvent evento) {
         navegar("/org/ac/view/fxml/DetalleVentaView.fxml");
@@ -100,6 +124,10 @@ public class CajeroController implements Initializable {
      * Método irAListaVentas.
      * @param evento parámetro de tipo ActionEvent
      */
+    /**
+     * Ejecuta la operacion irAListaVentas.
+     * @param evento valor de tipo ActionEvent
+     */
     public void irAListaVentas(ActionEvent evento) {
         navegar("/org/ac/view/fxml/ListaVentasView.fxml");
     }
@@ -108,6 +136,10 @@ public class CajeroController implements Initializable {
     /**
      * Método irAInventario.
      * @param evento parámetro de tipo ActionEvent
+     */
+    /**
+     * Ejecuta la operacion irAInventario.
+     * @param evento valor de tipo ActionEvent
      */
     public void irAInventario(ActionEvent evento) {
         navegar("/org/ac/view/fxml/InventarioView.fxml");
@@ -118,6 +150,10 @@ public class CajeroController implements Initializable {
      * Método agregarVenta.
      * @param evento parámetro de tipo MouseEvent
      */
+    /**
+     * Ejecuta la operacion agregarVenta.
+     * @param evento valor de tipo MouseEvent
+     */
     public void agregarVenta(MouseEvent evento) {
         navegar("/org/ac/view/fxml/VentaView.fxml");
     }
@@ -126,6 +162,10 @@ public class CajeroController implements Initializable {
     /**
      * Método detalleVenta.
      * @param evento parámetro de tipo MouseEvent
+     */
+    /**
+     * Ejecuta la operacion detalleVenta.
+     * @param evento valor de tipo MouseEvent
      */
     public void detalleVenta(MouseEvent evento) {
         navegar("/org/ac/view/fxml/DetalleVentaView.fxml");
@@ -136,6 +176,10 @@ public class CajeroController implements Initializable {
      * Método listaVentas.
      * @param evento parámetro de tipo MouseEvent
      */
+    /**
+     * Ejecuta la operacion listaVentas.
+     * @param evento valor de tipo MouseEvent
+     */
     public void listaVentas(MouseEvent evento) {
         navegar("/org/ac/view/fxml/ListaVentasView.fxml");
     }
@@ -144,6 +188,10 @@ public class CajeroController implements Initializable {
     /**
      * Método verInventario.
      * @param evento parámetro de tipo MouseEvent
+     */
+    /**
+     * Ejecuta la operacion verInventario.
+     * @param evento valor de tipo MouseEvent
      */
     public void verInventario(MouseEvent evento) {
         navegar("/org/ac/view/fxml/InventarioView.fxml");

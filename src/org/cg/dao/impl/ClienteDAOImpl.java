@@ -16,12 +16,23 @@ import org.cg.util.Conexion;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class ClienteDAOImpl del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class ClienteDAOImpl implements ClienteDAO {
 
     @Override
     /**
      * Método listarTodos.
      * @return un valor de tipo ArrayList<Cliente>
+     */
+    /**
+     * Ejecuta la operacion listarTodos.
+     * @return valor de tipo ArrayList<Cliente>
      */
     public ArrayList<Cliente> listarTodos() {
         ArrayList<Cliente> lista = new ArrayList<>();
@@ -46,6 +57,11 @@ public class ClienteDAOImpl implements ClienteDAO {
      * Método buscarPorId.
      * @param cui parámetro de tipo Long
      * @return un valor de tipo Cliente
+     */
+    /**
+     * Ejecuta la operacion buscarPorId.
+     * @param cui valor de tipo Long
+     * @return valor de tipo Cliente
      */
     public Cliente buscarPorId(Long cui) {
         Cliente c = null;
@@ -73,6 +89,11 @@ public class ClienteDAOImpl implements ClienteDAO {
      * @param cliente parámetro de tipo Cliente
      * @return un valor de tipo boolean
      */
+    /**
+     * Ejecuta la operacion crear.
+     * @param cliente valor de tipo Cliente
+     * @return valor de tipo boolean
+     */
     public boolean crear(Cliente cliente) {
         String sql = "{call sp_insertarcliente(?,?,?,?)}";
         try (Connection conexion = Conexion.getInstancia().conectar(); CallableStatement consulta = conexion.prepareCall(sql)) {
@@ -91,6 +112,11 @@ public class ClienteDAOImpl implements ClienteDAO {
      * Método actualizar.
      * @param cliente parámetro de tipo Cliente
      * @return un valor de tipo boolean
+     */
+    /**
+     * Ejecuta la operacion actualizar.
+     * @param cliente valor de tipo Cliente
+     * @return valor de tipo boolean
      */
     public boolean actualizar(Cliente cliente) {
         String sql = "{call sp_actualizarcliente(?,?,?,?)}";
@@ -111,6 +137,11 @@ public class ClienteDAOImpl implements ClienteDAO {
      * Método eliminar.
      * @param cui parámetro de tipo Long
      * @return un valor de tipo boolean
+     */
+    /**
+     * Ejecuta la operacion eliminar.
+     * @param cui valor de tipo Long
+     * @return valor de tipo boolean
      */
     public boolean eliminar(Long cui) {
         String sql = "{call sp_eliminarcliente(?)}";

@@ -16,12 +16,23 @@ import org.cg.util.Conexion;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class AutorLibroDAOImpl del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class AutorLibroDAOImpl implements AutorLibroDAO {
 
     @Override
     /**
      * Método listarTodos.
      * @return un valor de tipo ArrayList<AutorLibro>
+     */
+    /**
+     * Ejecuta la operacion listarTodos.
+     * @return valor de tipo ArrayList<AutorLibro>
      */
     public ArrayList<AutorLibro> listarTodos() {
         ArrayList<AutorLibro> lista = new ArrayList<>();
@@ -47,6 +58,11 @@ public class AutorLibroDAOImpl implements AutorLibroDAO {
      * Método buscarPorId.
      * @param idAutorLibro parámetro de tipo Integer
      * @return un valor de tipo AutorLibro
+     */
+    /**
+     * Ejecuta la operacion buscarPorId.
+     * @param idAutorLibro valor de tipo Integer
+     * @return valor de tipo AutorLibro
      */
     public AutorLibro buscarPorId(Integer idAutorLibro) {
         AutorLibro al = null;
@@ -74,6 +90,11 @@ public class AutorLibroDAOImpl implements AutorLibroDAO {
      * @param autorLibro parámetro de tipo AutorLibro
      * @return un valor de tipo boolean
      */
+    /**
+     * Ejecuta la operacion crear.
+     * @param autorLibro valor de tipo AutorLibro
+     * @return valor de tipo boolean
+     */
     public boolean crear(AutorLibro autorLibro) {
         String sql = "{call sp_insertarautorlibro(?,?)}";
         try (Connection conexion = Conexion.getInstancia().conectar();
@@ -91,6 +112,11 @@ public class AutorLibroDAOImpl implements AutorLibroDAO {
      * Método actualizar.
      * @param autorLibro parámetro de tipo AutorLibro
      * @return un valor de tipo boolean
+     */
+    /**
+     * Ejecuta la operacion actualizar.
+     * @param autorLibro valor de tipo AutorLibro
+     * @return valor de tipo boolean
      */
     public boolean actualizar(AutorLibro autorLibro) {
         String sql = "{call sp_actualizarautorlibro(?,?,?)}";
@@ -110,6 +136,11 @@ public class AutorLibroDAOImpl implements AutorLibroDAO {
      * Método eliminar.
      * @param idAutorLibro parámetro de tipo Integer
      * @return un valor de tipo boolean
+     */
+    /**
+     * Ejecuta la operacion eliminar.
+     * @param idAutorLibro valor de tipo Integer
+     * @return valor de tipo boolean
      */
     public boolean eliminar(Integer idAutorLibro) {
         String sql = "{call sp_eliminarautorlibro(?)}";

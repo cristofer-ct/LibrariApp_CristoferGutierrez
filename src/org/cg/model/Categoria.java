@@ -8,6 +8,13 @@ package org.cg.model;
  * @author aruba
  * @version 1.0
  */
+/**
+ * Class Categoria del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class Categoria {
     private int idCategoria;
     private String nombreCategoria;
@@ -41,6 +48,11 @@ public class Categoria {
      * @param idCategoria parámetro de tipo int
      * @param nombreCategoria parámetro de tipo String
      */
+    /**
+     * Constructor de Categoria.
+     * @param idCategoria valor de tipo int
+     * @param nombreCategoria valor de tipo String
+     */
     public Categoria(int idCategoria, String nombreCategoria) {
         this.idCategoria = idCategoria;
         this.nombreCategoria = nombreCategoria;
@@ -59,6 +71,10 @@ public class Categoria {
      * Obtiene el valor de idcategoria.
      * @return un valor de tipo int
      */
+    /**
+     * Obtiene el valor de idcategoria.
+     * @return valor de tipo int
+     */
     public int getIdCategoria() {
         return idCategoria;
     }
@@ -75,6 +91,10 @@ public class Categoria {
     /**
      * Establece el valor de idcategoria.
      * @param idCategoria parámetro de tipo int
+     */
+    /**
+     * Establece el valor de idcategoria.
+     * @param idCategoria valor de tipo int
      */
     public void setIdCategoria(int idCategoria) {
         this.idCategoria = idCategoria;
@@ -93,6 +113,10 @@ public class Categoria {
      * Obtiene el valor de nombrecategoria.
      * @return un valor de tipo String
      */
+    /**
+     * Obtiene el valor de nombrecategoria.
+     * @return valor de tipo String
+     */
     public String getNombreCategoria() {
         return nombreCategoria;
     }
@@ -109,6 +133,10 @@ public class Categoria {
     /**
      * Establece el valor de nombrecategoria.
      * @param nombreCategoria parámetro de tipo String
+     */
+    /**
+     * Establece el valor de nombrecategoria.
+     * @param nombreCategoria valor de tipo String
      */
     public void setNombreCategoria(String nombreCategoria) {
         this.nombreCategoria = nombreCategoria;
@@ -129,6 +157,10 @@ public class Categoria {
     /**
      * Método toString.
      * @return un valor de tipo String
+     */
+    /**
+     * Retorna la representacion en cadena del objeto.
+     * @return valor de tipo String
      */
     public String toString() {
         return nombreCategoria;

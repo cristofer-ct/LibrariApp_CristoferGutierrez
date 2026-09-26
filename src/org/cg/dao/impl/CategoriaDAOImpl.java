@@ -19,6 +19,13 @@ import org.cg.util.Conexion;
  * @see CategoriaDAO
  * @see Categoria
  */
+/**
+ * Class CategoriaDAOImpl del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class CategoriaDAOImpl implements CategoriaDAO {
 
     /**
@@ -32,6 +39,10 @@ public class CategoriaDAOImpl implements CategoriaDAO {
     /**
      * Método listarTodos.
      * @return un valor de tipo ArrayList<Categoria>
+     */
+    /**
+     * Ejecuta la operacion listarTodos.
+     * @return valor de tipo ArrayList<Categoria>
      */
     public ArrayList<Categoria> listarTodos() {
         ArrayList<Categoria> lista = new ArrayList<>();
@@ -64,6 +75,11 @@ public class CategoriaDAOImpl implements CategoriaDAO {
      * Método buscarPorId.
      * @param idCategoria parámetro de tipo Integer
      * @return un valor de tipo Categoria
+     */
+    /**
+     * Ejecuta la operacion buscarPorId.
+     * @param idCategoria valor de tipo Integer
+     * @return valor de tipo Categoria
      */
     public Categoria buscarPorId(Integer idCategoria) {
         Categoria c = null;
@@ -98,6 +114,11 @@ public class CategoriaDAOImpl implements CategoriaDAO {
      * @param categoria parámetro de tipo Categoria
      * @return un valor de tipo boolean
      */
+    /**
+     * Ejecuta la operacion crear.
+     * @param categoria valor de tipo Categoria
+     * @return valor de tipo boolean
+     */
     public boolean crear(Categoria categoria) {
         String sql = "{call sp_insertarcategoria(?)}";
         try (Connection conexion = Conexion.getInstancia().conectar();
@@ -122,6 +143,11 @@ public class CategoriaDAOImpl implements CategoriaDAO {
      * Método actualizar.
      * @param categoria parámetro de tipo Categoria
      * @return un valor de tipo boolean
+     */
+    /**
+     * Ejecuta la operacion actualizar.
+     * @param categoria valor de tipo Categoria
+     * @return valor de tipo boolean
      */
     public boolean actualizar(Categoria categoria) {
         String sql = "{call sp_actualizarcategoria(?,?)}";
@@ -148,6 +174,11 @@ public class CategoriaDAOImpl implements CategoriaDAO {
      * Método eliminar.
      * @param idCategoria parámetro de tipo Integer
      * @return un valor de tipo boolean
+     */
+    /**
+     * Ejecuta la operacion eliminar.
+     * @param idCategoria valor de tipo Integer
+     * @return valor de tipo boolean
      */
     public boolean eliminar(Integer idCategoria) {
         String sql = "{call sp_eliminarcategoria(?)}";

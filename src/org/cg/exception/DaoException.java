@@ -16,11 +16,22 @@ package org.cg.exception;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class DaoException del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class DaoException extends RuntimeException {
 
     /**
      * Constructor para la clase DaoException.
      * @param mensaje parámetro de tipo String
+     */
+    /**
+     * Constructor de DaoException.
+     * @param mensaje valor de tipo String
      */
     public DaoException(String mensaje) {
         super(mensaje);
@@ -30,6 +41,11 @@ public class DaoException extends RuntimeException {
      * Constructor para la clase DaoException.
      * @param mensaje parámetro de tipo String
      * @param causa parámetro de tipo Throwable
+     */
+    /**
+     * Constructor de DaoException.
+     * @param mensaje valor de tipo String
+     * @param causa valor de tipo Throwable
      */
     public DaoException(String mensaje, Throwable causa) {
         super(mensaje, causa);

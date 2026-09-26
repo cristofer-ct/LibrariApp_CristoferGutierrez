@@ -6,6 +6,13 @@ package org.cg.model;
  * @author Cristofer
  * @version 1.0.0
  */
+/**
+ * Class Autor del sistema LibraryApp.
+ *
+ * @author Cristofer Gutierrez
+ * @version 1.0.0
+ * @see <a href='https://github.com/cristofer-ct/LibrariApp_CristoferGutierrez'>Repositorio</a>
+ */
 public class Autor {
     private int idAutor;
     private String nombreAutor;
@@ -38,6 +45,14 @@ public class Autor {
      * @param nacionalidad parámetro de tipo String
      * @param biografia parámetro de tipo String
      */
+    /**
+     * Constructor de Autor.
+     * @param idAutor valor de tipo int
+     * @param nombreAutor valor de tipo String
+     * @param apellidoAutor valor de tipo String
+     * @param nacionalidad valor de tipo String
+     * @param biografia valor de tipo String
+     */
     public Autor(int idAutor, String nombreAutor, String apellidoAutor, String nacionalidad, String biografia) {
         this.idAutor = idAutor;
         this.nombreAutor = nombreAutor;
@@ -54,6 +69,10 @@ public class Autor {
      * Obtiene el valor de idautor.
      * @return un valor de tipo int
      */
+    /**
+     * Obtiene el valor de idautor.
+     * @return valor de tipo int
+     */
     public int getIdAutor() {
         return idAutor;
     }
@@ -65,6 +84,10 @@ public class Autor {
     /**
      * Establece el valor de idautor.
      * @param idAutor parámetro de tipo int
+     */
+    /**
+     * Establece el valor de idautor.
+     * @param idAutor valor de tipo int
      */
     public void setIdAutor(int idAutor) {
         this.idAutor = idAutor;
@@ -78,6 +101,10 @@ public class Autor {
      * Obtiene el valor de nombreautor.
      * @return un valor de tipo String
      */
+    /**
+     * Obtiene el valor de nombreautor.
+     * @return valor de tipo String
+     */
     public String getNombreAutor() {
         return nombreAutor;
     }
@@ -89,6 +116,10 @@ public class Autor {
     /**
      * Establece el valor de nombreautor.
      * @param nombreAutor parámetro de tipo String
+     */
+    /**
+     * Establece el valor de nombreautor.
+     * @param nombreAutor valor de tipo String
      */
     public void setNombreAutor(String nombreAutor) {
         this.nombreAutor = nombreAutor;
@@ -102,6 +133,10 @@ public class Autor {
      * Obtiene el valor de apellidoautor.
      * @return un valor de tipo String
      */
+    /**
+     * Obtiene el valor de apellidoautor.
+     * @return valor de tipo String
+     */
     public String getApellidoAutor() {
         return apellidoAutor;
     }
@@ -113,6 +148,10 @@ public class Autor {
     /**
      * Establece el valor de apellidoautor.
      * @param apellidoAutor parámetro de tipo String
+     */
+    /**
+     * Establece el valor de apellidoautor.
+     * @param apellidoAutor valor de tipo String
      */
     public void setApellidoAutor(String apellidoAutor) {
         this.apellidoAutor = apellidoAutor;
@@ -126,6 +165,10 @@ public class Autor {
      * Obtiene el valor de nacionalidad.
      * @return un valor de tipo String
      */
+    /**
+     * Obtiene el valor de nacionalidad.
+     * @return valor de tipo String
+     */
     public String getNacionalidad() {
         return nacionalidad;
     }
@@ -137,6 +180,10 @@ public class Autor {
     /**
      * Establece el valor de nacionalidad.
      * @param nacionalidad parámetro de tipo String
+     */
+    /**
+     * Establece el valor de nacionalidad.
+     * @param nacionalidad valor de tipo String
      */
     public void setNacionalidad(String nacionalidad) {
         this.nacionalidad = nacionalidad;
@@ -150,6 +197,10 @@ public class Autor {
      * Obtiene el valor de biografia.
      * @return un valor de tipo String
      */
+    /**
+     * Obtiene el valor de biografia.
+     * @return valor de tipo String
+     */
     public String getBiografia() {
         return biografia;
     }
@@ -161,6 +212,10 @@ public class Autor {
     /**
      * Establece el valor de biografia.
      * @param biografia parámetro de tipo String
+     */
+    /**
+     * Establece el valor de biografia.
+     * @param biografia valor de tipo String
      */
     public void setBiografia(String biografia) {
         this.biografia = biografia;
@@ -174,6 +229,10 @@ public class Autor {
     /**
      * Método toString.
      * @return un valor de tipo String
+     */
+    /**
+     * Retorna la representacion en cadena del objeto.
+     * @return valor de tipo String
      */
     public String toString() {
         return nombreAutor + " " + apellidoAutor;
